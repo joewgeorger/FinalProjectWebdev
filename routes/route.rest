@@ -1,0 +1,44 @@
+GET http://localhost:5000/user
+
+###
+
+POST http://localhost:5000/user/logout
+Content-Type: application/json
+
+{
+    "user": "jill"
+}
+
+
+###
+
+GET http://localhost:5000/user/verify
+
+###
+
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "user": "jill",
+    "pass": "111",
+    "emp": "n"
+}
+
+###
+
+GET http://localhost:5000/orders/uOrders?u=Bill
+
+
+
+
+###
+
+POST http://localhost:5000/orders
+Content-Type: application/json
+
+{
+    "user": "paul",
+    "dough": "classic",
+    "topping": "chocolate chip"
+}
